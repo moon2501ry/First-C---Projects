@@ -11,7 +11,7 @@ int main() {
     std::cout << "Denconto(em %): ";
     std::cin >> discount;
 
-    final = (discount / 100) * valor;
+    final = valor - ((discount / 100) * valor);
 
     std::cout << "\nO valor final: " << final;
     if (final <= 0){
